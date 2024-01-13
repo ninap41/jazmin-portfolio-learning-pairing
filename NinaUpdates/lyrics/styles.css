@@ -1,0 +1,97 @@
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+
+/* Demonstrating css variables */
+:root { 
+    --body-color: white;
+    --tea-rose: #EBBAB9;
+    --timber-wolf: #C9C5BA;
+    --cambridge-blue: #97B1A6;
+    --air-force-blue: #698996;
+    --caribbean-current: #407076;
+    /* Found colors @ https://coolors.co/ebbab9-c9c5ba-97b1a6-698996-407076 */
+}
+
+* { /* all */
+  font-family: 'Manrope', sans-serif;
+}
+
+/* elements */
+body {
+    color: var(--body-color);
+    background-color: var(--caribbean-current);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: bold;
+    height: 15px;
+    cursor: 'link';
+    padding: 1rem; 
+    font-size: small;
+    border-radius: 3px;
+    color: white;
+}
+
+/* classes */
+.main {
+    display: flex;
+    justify-self: unset;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: color-mix(in srgb, var(--caribbean-current) 50%, var(--cambridge-blue) 50%);
+    padding: 1rem;
+}
+
+
+/* animations */
+@-webkit-keyframes runRight{
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 100%;    
+    }
+  }
+
+@-webkit-keyframes runLeft {
+    0% {
+      right: 0;
+    }
+    50% {
+     right: 50%;  
+
+    }
+    100% {
+      right: 100%;  
+      color: rgb(0, 0, 0)
+    }
+  }
+
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 100%;
+    }
+    50% {
+    opacity: 50%;
+
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+
+ 
